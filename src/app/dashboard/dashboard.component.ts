@@ -44,7 +44,7 @@ export class DashboardComponent implements OnInit {
     if(this.username && this.password){
       
       this.user.forEach(v => {
-        console.log(1)
+       
         v.forEach(k => {
           if( this.username === k.username && this.password === k.password){
             this.num ++;
@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
         if(this.num == 1){
           this.bool = true;
         }else {
-          console.log(2)
+          
           this.bool = false;
           alert('密码或用户名错误！！！');
         }
